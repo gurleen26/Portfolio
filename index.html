@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurleen Kaur | Portfolio</title>
+    <link rel="stylesheet" href="[cdnjs.cloudflare.com](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css)">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+        </div>
+    </div>
+
+    <!-- Particle Background -->
+    <canvas id="particles"></canvas>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#about" class="logo">GK<span>.</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about" class="nav-link active">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#achievements" class="nav-link">Achievements</a></li>
+            <li><a href="#contact" class="nav-link">Contact Me</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle">
+            <i class="fas fa-moon moon"></i>
+            <span class="toggle-circle"></span>
+            <i class="fas fa-sun sun"></i>
+        </button>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Gurleen <span>Kaur</span></h1>
+            <p class="hero-title">
+                <span class="typewriter" id="typewriter"></span>
+            </p>
+            <p class="hero-description">
+                Passionate about software development and machine learning, focused on building real-world applications and solving complex problems through code.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="#projects" class="btn btn-secondary">View Projects</a>
+            </div>
+            
+            <div class="social-icons">
+
+            <a href="https://github.com/gurleen26" target="_blank" class="social-icon">
+            <i class="fab fa-github"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/gurleen-kaur-bhamra2627/" target="_blank" class="social-icon">
+            <i class="fab fa-linkedin-in"></i>
+            </a>
+
+            <a href="mailto:qudeenkaur2k5@gmail.com" class="social-icon">
+            <i class="fas fa-envelope"></i>
+            </a>
+
+            <a href="resume.pdf" target="_blank" class="social-icon">
+            <i class="fas fa-file-alt"></i>
+            </a>
+
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="image-container">
+                <img src="no-background.png" 
+                     alt="Gurleen Kaur - Software Developer | Machine Learning Enthusiast" 
+                     class="profile-img">
+                <!-- <img src="[images.unsplash.com](https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face)" 
+                     alt="Gurleen Kaur - Software Developer | Machine Learning Enthusiast" 
+                     class="profile-img"> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+    <h2 class="section-title">My Skills</h2>
+    <p class="section-subtitle">Technologies and tools I work with</p>
+    
+    <div class="skills-container">
+
+        <!-- Programming Languages -->
+        <div class="skill-category">
+            <h3><i class="fas fa-code"></i> Programming Languages</h3>
+
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-name">Java</span>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="90"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-name">Python</span>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="85"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-name">C / C++</span>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="80"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-name">Kotlin</span>
+                    <span class="skill-percentage">70%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="70"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Web Development -->
+        <div class="skill-category">
+            <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
+
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-name">HTML / CSS</span>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="90"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="85"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-name">Flask</span>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="80"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Machine Learning -->
+        <div class="skill-category">
+            <h3><i class="fas fa-brain"></i> Machine Learning & Data</h3>
+
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-name">Machine Learning Fundamentals</span>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="80"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-name">Data Analysis (Python)</span>
+                    <span class="skill-percentage">82%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="82"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-name">Google Cloud ML Tools</span>
+                    <span class="skill-percentage">75%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="75"></div>
+                </div>
+            </div>
+
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-name">Model Deployment (GCP)</span>
+                    <span class="skill-percentage">70%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-progress="70"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Tools -->
+        <div class="skill-category">
+            <h3><i class="fas fa-tools"></i> Tools & Platforms</h3>
+
+            <div class="tech-tags">
+                <span class="tech-tag">Git</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">Maven</span>
+                <span class="tech-tag">JFreeChart</span>
+                <span class="tech-tag">Google Cloud</span>
+                <span class="tech-tag">Vertex AI</span>
+                <span class="tech-tag">BigQuery</span>
+                <span class="tech-tag">Cloud Storage</span>
+                <span class="tech-tag">VS Code</span>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title">My Projects</h2>
+        <p class="section-subtitle">Some of my recent work</p>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="[images.unsplash.com](https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop)" alt="E-Commerce Platform">
+                    <div class="project-overlay">
+                        <a href="[github.com](https://github.com)" target="_blank" class="project-link" aria-label="View code">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="[example.com](https://example.com)" target="_blank" class="project-link" aria-label="View live">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">
+                        <a href="[github.com](https://github.com)" target="_blank">E-Commerce Platform</a>
+                    </h3>
+                    <p class="project-description">
+                        A full-featured online shopping platform with user authentication, 
+                        product management, cart functionality, and secure payment integration.
+                    </p>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Stripe</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="[images.unsplash.com](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop)" alt="Analytics Dashboard">
+                    <div class="project-overlay">
+                        <a href="[github.com](https://github.com)" target="_blank" class="project-link" aria-label="View code">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="[example.com](https://example.com)" target="_blank" class="project-link" aria-label="View live">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">
+                        <a href="[github.com](https://github.com)" target="_blank">Analytics Dashboard</a>
+                    </h3>
+                    <p class="project-description">
+                        Real-time data visualization dashboard with interactive charts, 
+                        custom reports, and data export functionality for business insights.
+                    </p>
+                    <div class="project-tech">
+                        <span>Vue.js</span>
+                        <span>D3.js</span>
+                        <span>Python</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="[images.unsplash.com](https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop)" alt="Social Media App">
+                    <div class="project-overlay">
+                        <a href="[github.com](https://github.com)" target="_blank" class="project-link" aria-label="View code">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="[example.com](https://example.com)" target="_blank" class="project-link" aria-label="View live">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">
+                        <a href="[github.com](https://github.com)" target="_blank">Social Media App</a>
+                    </h3>
+                    <p class="project-description">
+                        A modern social networking application with real-time messaging, 
+                        post sharing, user profiles, and notification system.
+                    </p>
+                    <div class="project-tech">
+                        <span>React Native</span>
+                        <span>Firebase</span>
+                        <span>Socket.io</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="[images.unsplash.com](https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?w=600&h=400&fit=crop)" alt="Task Management System">
+                    <div class="project-overlay">
+                        <a href="[github.com](https://github.com)" target="_blank" class="project-link" aria-label="View code">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="[example.com](https://example.com)" target="_blank" class="project-link" aria-label="View live">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">
+                        <a href="[github.com](https://github.com)" target="_blank">Task Management System</a>
+                    </h3>
+                    <p class="project-description">
+                        A collaborative project management tool with kanban boards, 
+                        team collaboration features, and progress tracking.
+                    </p>
+                    <div class="project-tech">
+                        <span>Next.js</span>
+                        <span>TypeScript</span>
+                        <span>Prisma</span>
+                        <span>Tailwind</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="[images.unsplash.com](https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&h=400&fit=crop)" alt="AI Image Generator">
+                    <div class="project-overlay">
+                        <a href="[github.com](https://github.com)" target="_blank" class="project-link" aria-label="View code">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="[example.com](https://example.com)" target="_blank" class="project-link" aria-label="View live">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">
+                        <a href="[github.com](https://github.com)" target="_blank">AI Image Generator</a>
+                    </h3>
+                    <p class="project-description">
+                        An AI-powered application that generates unique images from text 
+                        descriptions using machine learning models and APIs.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>OpenAI</span>
+                        <span>React</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="[images.unsplash.com](https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600&h=400&fit=crop)" alt="Weather App">
+                    <div class="project-overlay">
+                        <a href="[github.com](https://github.com)" target="_blank" class="project-link" aria-label="View code">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="[example.com](https://example.com)" target="_blank" class="project-link" aria-label="View live">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">
+                        <a href="[github.com](https://github.com)" target="_blank">Weather Application</a>
+                    </h3>
+                    <p class="project-description">
+                        A beautiful weather app with location-based forecasts, interactive 
+                        maps, and severe weather alerts for multiple cities.
+                    </p>
+                    <div class="project-tech">
+                        <span>JavaScript</span>
+                        <span>OpenWeather API</span>
+                        <span>Mapbox</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <h2 class="section-title">Achievements</h2>
+        <p class="section-subtitle">Recognition and milestones in my journey</p>
+        
+        <div class="achievements-container">
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <h3 class="achievement-title">Best Developer Award</h3>
+                <p class="achievement-description">
+                    Recognized as the best developer at Tech Summit 2023 
+                    for innovative project solutions.
+                </p>
+                <p class="achievement-year">2023</p>
+            </div>
+
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-medal"></i>
+                </div>
+                <h3 class="achievement-title">Hackathon Winner</h3>
+                <p class="achievement-description">
+                    First place at Global Hack 2022 with an AI-powered 
+                    accessibility tool for visually impaired users.
+                </p>
+                <p class="achievement-year">2022</p>
+            </div>
+
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3 class="achievement-title">AWS Certified</h3>
+                <p class="achievement-description">
+                    Amazon Web Services Solutions Architect Professional 
+                    certification with distinction.
+                </p>
+                <p class="achievement-year">2022</p>
+            </div>
+
+            <div class="achievement-card">
+                <div class="achievement-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <h3 class="achievement-title">Open Source Contributor</h3>
+                <p class="achievement-description">
+                    Top contributor to multiple open source projects 
+                    with 1000+ GitHub stars collectively.
+                </p>
+                <p class="achievement-year">2021</p>
+            </div>
+        </div>
+
+        <div class="stats-container">
+            <div class="stat-item">
+                <div class="stat-number" data-count="50">0</div>
+                <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="30">0</div>
+                <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="5">0</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-count="15">0</div>
+                <div class="stat-label">Awards Won</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Let's work together on your next project</p>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <a href="mailto:gurleenkaur2k5@gmail.com">gurleenkaur2k5@gmail.com</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Phone</h4>
+                        <a href="tel:+918360295190">+91 8360295190</a>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Location</h4>
+                        <p>San Francisco, California</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Working Hours</h4>
+                        <p>Mon - Fri: 9AM - 6PM PST</p>
+                    </div>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Smith" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Project Inquiry" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell me about your project..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p class="footer-text">© 2024 <span>Gurleen Kaur</span>. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
