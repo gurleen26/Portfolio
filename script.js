@@ -98,36 +98,7 @@ sections.forEach(section => {
     observer.observe(section);
 });
 
-// Skill Bar Animation
-function animateSkillBars() {
-    const skillBars = document.querySelectorAll('.skill-progress');
-    skillBars.forEach(bar => {
-        const progress = bar.getAttribute('data-progress');
-        bar.style.width = progress + '%';
-    });
-}
 
-// Stats Counter Animation
-function animateStats() {
-    const stats = document.querySelectorAll('.stat-number');
-    stats.forEach(stat => {
-        const target = parseInt(stat.getAttribute('data-count'));
-        const duration = 2000;
-        const increment = target / (duration / 16);
-        let current = 0;
-
-        const updateCount = () => {
-            current += increment;
-            if (current < target) {
-                stat.textContent = Math.floor(current) + '+';
-                requestAnimationFrame(updateCount);
-            } else {
-                stat.textContent = target + '+';
-            }
-        };
-        updateCount();
-    });
-}
 
 // Typewriter Effect
 const typewriterElement = document.getElementById('typewriter');
@@ -290,3 +261,81 @@ animateParticles();
 
 // Initialize first section as visible
 document.querySelector('#about').classList.add('visible');
+
+
+// Academic Journey Scroll Animations
+document.addEventListener('DOMContentLoaded', function() {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    const statCards = document.querySelectorAll('.stat-card');
+    const courseCategories = document.querySelectorAll('.course-category');
+
+    // Function to check if element is in viewport
+    function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    // Function to handle scroll animations
+    function handleScrollAnimation() {
+        // Animate timeline items
+        timelineItems.forEach(item => {
+            if (isInViewport(item) && !item.classList.contains('revealed')) {
+                item.classList.add('revealed');
+            }
+        });
+
+        // Animate stat cards
+        statCards.forEach(card => {
+            if (isInViewport(card) && !card.classList.contains('revealed')) {
+                card.classList.add('revealed');
+                
+                // Animate progress bars
+                const progressFill = card.querySelector('.progress-fill');
+                if (progressFill) {
+                    const targetWidth = progressFill.style.width;
+                    progressFill.style.width = '0';
+                    setTimeout(() => {
+                        progressFill.style.width = targetWidth;
+                    }, 100);
+                }
+            }
+        });
+
+        // Animate course categories
+        courseCategories.forEach(category => {
+            if (isInViewport(category) && !category.classList.contains('revealed')) {
+                category.classList.add('revealed');
+            }
+        });
+    }
+
+    // Initial check
+    setTimeout(handleScrollAnimation, 500);
+
+    // Add scroll event listener
+    window.addEventListener('scroll', handleScrollAnimation);
+});
+
+
+
+function sendEmail(e){
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+
+    const mailto = `mailto:gurleenkaur2k5@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+        "Name: " + name + "\nEmail: " + email + "\n\nMessage:\n" + message
+    )}`;
+
+    window.location.href = mailto;
+}
+
+document.getElementById("year").textContent = new Date().getFullYear();
