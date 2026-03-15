@@ -636,16 +636,15 @@ body {
 }
 
 .cgpa-value {
-    color: white;
     font-size: 1.6rem;
     font-weight: 700;
-    background: linear-gradient(135deg, #fff, #e0e0e0);
+    background: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .cgpa-max {
-    color: rgba(255, 255, 255, 0.2);
+    color: var(--text-secondary);
     font-size: 0.8rem;
     margin-left: 2px;
 }
@@ -1528,3 +1527,76 @@ height:180px;
 }
 }
 
+
+/* ============================= */
+/* FIX ACADEMIC SECTION THEME   */
+/* ============================= */
+
+/* Node titles */
+.node-header h3{
+    color: var(--text-primary);
+}
+
+/* Node description */
+.node-description{
+    color: var(--text-secondary);
+}
+
+/* Semester label */
+.sem-label{
+    color: var(--text-secondary);
+}
+
+/* Badge */
+.node-badge{
+    color: var(--text-secondary);
+}
+
+/* CGPA label */
+.cgpa-label{
+    color: var(--text-secondary);
+}
+
+/* Stats numbers */
+.stat-number{
+    color: var(--text-primary);
+}
+
+/* Stats labels */
+.stat-label{
+    color: var(--text-secondary);
+}
+
+/* Overview headers */
+.overview-header h3{
+    color: var(--text-primary);
+}
+
+/* Progress value */
+.progress-value{
+    color: var(--text-primary);
+}
+
+/* Semester tag */
+.node-sem{
+    color: var(--text-primary);
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+}
+
+/* Cards background should follow theme */
+.node-content{
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+}
+
+/* Overview cards */
+.overview-card{
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+}
+
+/* CGPA card */
+.node-cgpa{
+    background: var(--bg-primary);
+}
